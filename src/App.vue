@@ -2,11 +2,15 @@
   <div>
     <div>解析Vue文件了哟~</div>
     <p>{{name}}</p>
+    <el-button @click="handleClick">click</el-button>
   </div>
 </template>
 
 <script setup>
 let name = 'Hello world'
+function handleClick() {
+  console.log(1)
+}
 </script>
 
 <style>
